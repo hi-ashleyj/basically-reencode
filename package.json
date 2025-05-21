@@ -29,6 +29,7 @@
 	"dependencies": {
 		"@ajwdmedia/svelterial-symbols": "^0.3.0",
 		"@types/node": "^22.15.21",
+		"ffmpeg-progress-wrapper": "^2.0.1",
 		"lowdb": "^7.0.1"
 	}
 }
