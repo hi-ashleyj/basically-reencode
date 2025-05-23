@@ -5,6 +5,10 @@
     import EventList from "@ajwdmedia/svelterial-symbols/Outlined/EventList.svelte";
     import Files from "@ajwdmedia/svelterial-symbols/Outlined/Files.svelte";
 	import { page } from "$app/state"; 
+
+    import "@fontsource/roboto";
+    import "@fontsource/comfortaa";
+    import "@fontsource/inconsolata";
 	
 	let { children } = $props();
 </script>

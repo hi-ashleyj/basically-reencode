@@ -28,8 +28,13 @@
 	},
 	"dependencies": {
 		"@ajwdmedia/svelterial-symbols": "^0.3.0",
+		"@fontsource/comfortaa": "^5.2.5",
+		"@fontsource/inconsolata": "^5.2.5",
+		"@fontsource/roboto": "^5.2.5",
 		"@types/node": "^22.15.21",
 		"ffmpeg-progress-wrapper": "^2.0.1",
-		"lowdb": "^7.0.1"
+		"is-video": "^2.0.0",
+		"lowdb": "^7.0.1",
+		"video-extensions": "^2.0.0"
 	}
 }

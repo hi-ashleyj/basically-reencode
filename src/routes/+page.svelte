@@ -7,10 +7,10 @@
 </script>
 
 
-<div class="h-full p-6 grid grid-cols-2 gap-6 grid-rows-[1fr_2fr_1fr]">
+<div class="h-full p-6 grid grid-cols-2 gap-6 grid-rows-[max-content_2fr_1fr]">
     <div class="col-span-2 card preset-filled-surface-100-900 p-6 grid gap-4 grid-rows-[max-content_1fr] items-end">
         <div class="w-full grid grid-cols-[1fr_max-content]">
-            <div class="font-heading-token text-2xl">Progress</div>
+            <div class="font-heading-token text-2xl font-heading">progress</div>
         </div>
         <div class="p-4 card preset-filled-surface-50-950 h-max">
             <Progress value={0.6} max={1} height="h-4" meterClasses="construction-gradient">21:27 / 34:57</Progress>
@@ -18,21 +18,21 @@
     </div>
 
     <div class="card preset-filled-surface-100-900 p-6 grid gap-4 grid-rows-[max-content_1fr]">
-        <div class="font-heading-token text-2xl">Queue</div>
+        <div class="font-heading-token text-2xl font-heading">queue</div>
         <div class="grid card preset-filled-surface-50-950 place-items-center">
             <div>Nothing Queued</div>
         </div>
     </div>
 
     <div class="card preset-filled-surface-100-900 p-6 grid gap-4 grid-rows-[max-content_1fr]">
-        <div class="font-heading-token text-2xl">History</div>
+        <div class="font-heading-token text-2xl font-heading">history</div>
         <div class="grid card preset-filled-surface-50-950 place-items-center">
             <div>No History</div>
         </div>
     </div>
 
     <div class="card preset-filled-surface-100-900 p-6">
-        <div class="font-heading-token text-2xl">Converter</div>
+        <div class="font-heading-token text-2xl font-heading">converter</div>
         {#if data.ffmpeg}
             ffmpeg version { data.ffmpeg.version }<br />
             encode h264: { data.ffmpeg.h264 ? "yes" : "no" }<br />
@@ -44,11 +44,15 @@
 
     <div class="card preset-filled-surface-100-900 p-6">
         <div class="w-full grid grid-cols-[1fr_max-content]">
-            <div class="font-heading-token text-2xl">System Options</div>
-            <button class="btn preset-filled-primary-500">Change</button>
+            <div class="font-heading-token text-2xl font-heading">system options</div>
+            <button class="btn preset-filled-primary-500 font-heading">change</button>
         </div>
-        Input Location: <br />
-        Output Location: <br />
+        <div class="grid grid-cols-[max-content_1fr]">
+            <span>Input Location:</span>
+            <span></span>
+            <span>Output Location:</span>
+            <span></span>
+        </div>
     </div>
 </div>
 

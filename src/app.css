@@ -9,3 +9,11 @@
 @import '@skeletonlabs/skeleton/themes/rose';
 
 @source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-heading {
+    font-family: 'Comfortaa', sans-serif;
+}
